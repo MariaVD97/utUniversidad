@@ -1,0 +1,23 @@
+//funcion que no recibe parametros y no retorna nada
+function saltodelinea() {
+    document.write("<br> <br> <br>");
+}
+
+//funcion que recibe un parametro y no retorna nada
+function imprimir(frase) {
+    document.write(frase);
+    saltodelinea();
+}
+
+//funciones que reciben parametros y retornan valores
+
+function calculadoraArea(base,altura) {
+    let area = (base * altura) /2;
+    imprimir("El área del triangulo es: " + area  + " mts.");
+}
+
+let base = prompt("¿Cuál es la base?");
+let altura = prompt("Cuál es la altura?");
+
+calculadoraArea(base,altura);
+
